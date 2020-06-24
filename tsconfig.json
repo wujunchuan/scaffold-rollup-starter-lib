@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        // 允许未执行的代码不报错
+        "allowUnreachableCode": true,
+        // 支持别名导入:
+        // import * as React from "react"
+        "esModuleInterop": true,
+        // 目标js的版本
+        "target": "es5",
+        // 目标代码的模块结构版本,rollup-plugin-typescript2默认是es2015
+        "module": "es2015",
+        // 编译过程中需要引入的库文件的列表
+        "lib": [
+            "es2015",
+            "es2016",
+            "es2017",
+            "dom"
+        ],
+        // 在表达式和声明上有隐含的 any类型时报错。
+        "noImplicitAny": true,
+        // 删除注释
+        "removeComments": true,
+        // 保留 const和 enum声明
+        "preserveConstEnums": false,
+        // 生成sourceMap
+        "sourceMap": true,
+        // 目标文件所在路径
+        "outDir": "./lib",
+        // 严格模式, 强烈建议开启
+        "strict": true,
+        // 额外支持解构/forof等功能
+        "downlevelIteration": true,
+        // 此处设置为node,才能解析import xx from 'xx'
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "pretty": true,
+         "allowJs": true,
+        "allowSyntheticDefaultImports": true
+    },
+    // 入口文件
+    "include": [
+        "src/**/*.ts"
+    ]
+}
